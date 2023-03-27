@@ -3,6 +3,7 @@ from string_functions import *
 
 class TestToUpper(unittest.TestCase):
     def test_upper(self):
+        ''' Test the to_upper function with various inputs and expected outputs '''
         self.assertEqual(to_upper('hello'), 'HELLO')
         self.assertEqual(to_upper("hello"), "HELLO")
         self.assertEqual(to_upper("HELLO"), "HELLO")
@@ -15,6 +16,7 @@ class TestToUpper(unittest.TestCase):
 
 class TestToLower(unittest.TestCase):
     def test_lower(self):
+        ''' Test the to_lower function with various inputs and expected outputs '''
         self.assertEqual(to_lower('HELLO'), 'hello')
         self.assertEqual(to_lower("HELLO"), "hello")
         self.assertEqual(to_lower("hello"), "hello")
@@ -27,6 +29,7 @@ class TestToLower(unittest.TestCase):
 
 class TestCapitalize(unittest.TestCase):
     def test_upper(self):
+        ''' Test the capitalize function with various inputs and expected outputs '''
         self.assertEqual(capitalize('hello'), 'Hello')
         self.assertEqual(capitalize("hello"), "Hello")
         self.assertEqual(capitalize("HELLO"), "Hello")
